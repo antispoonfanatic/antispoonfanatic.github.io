@@ -1,0 +1,443 @@
+:root {
+  --clr-nav: rgb(147, 224, 255);
+  --clr-1bcom: rgb(255, 253, 147);
+  --ff-text: "Poppins", sans-serif;
+  --ff-head: "Playfair Display", serif;
+}
+
+html {
+  width: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Nav bar css mostly*/
+
+.nav-toggle {
+  opacity: 0;
+}
+
+a {
+  text-decoration: none;
+  box-shadow: inset 0 -10px var(--clr-nav);
+  color: black;
+  font-family: var(--ff-text);
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.navlinks {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px 10px;
+  margin-left: 10px;
+}
+
+.navlinks a {
+  transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+  transition: all 0.3s ease 0s;
+  box-shadow: inset 0 -30px var(--clr-nav);
+  background-color: var(--clr-nav);
+  padding: 0px 10px;
+}
+
+#monogram {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 4px; /*only for my mans lungi krishna*/
+  transition: all 0.3s ease 0s;
+}
+
+#monogram:hover {
+  letter-spacing: normal;
+  box-shadow: inset 0 -50px var(--clr-nav);
+  padding: 0px 20px;
+}
+
+.main-container {
+  font-family: var(--ff-text);
+  font-weight: 200;
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.body-text p {
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+#landing,
+#about-me,
+#learning-box,
+#contact {
+  min-height: 100vh;
+}
+
+#landing {
+  display: grid;
+  place-items: center;
+  background-image: url(../img/books.jpg);
+  background-size: auto;
+  background-position: 60% center;
+}
+
+#landing h1 {
+  color: rgb(255, 255, 255);
+  font-size: 8rem;
+  justify-content: center;
+}
+
+#landing p {
+  background-color: rgba(147, 206, 255, 0.5);
+  padding: 0 10px;
+}
+
+#learning-box,
+#about-me,
+#contact {
+  padding: 0px 20px;
+}
+
+#learning-box h2,
+#about-me h2,
+#contact h2 {
+  padding-top: 50px;
+  padding-left: 50px;
+  font-size: 4rem;
+  font-family: var(--ff-head);
+  font-weight: 700;
+}
+
+#learning-box p,
+#about-me p,
+#contact p {
+  font-size: 1.5em;
+  padding-left: 50px;
+  font-weight: 300;
+}
+
+#learning {
+  padding-left: 60px;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+}
+
+#learning li {
+  list-style: none;
+}
+
+#learning a {
+  box-shadow: inset 0 -10px var(--clr-1bcom);
+  transition: all 0.3s ease 0s;
+  padding-left: 30px;
+}
+
+.bcom li {
+  margin-top: 10px;
+}
+
+#spantitle p {
+  padding-left: 50px;
+}
+
+#learning a:hover {
+  transition: all 0.3s ease 0s;
+  box-shadow: inset 0 -30px var(--clr-1bcom);
+  padding: 0px 10px;
+}
+
+#learning h3 {
+  font-size: 2em;
+}
+
+#learning a {
+  padding-top: 10px;
+}
+
+.bcom {
+  margin-top: 40px;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.about-box {
+  display: grid;
+  grid-column: auto;
+  height: 80%;
+  place-items: center;
+}
+
+.body-text {
+  max-width: 1000px;
+  justify-content: center;
+}
+
+.about-box img {
+  height: 50vh;
+  padding-left: 50px;
+}
+
+.body-text a {
+  font-weight: 700;
+  transition: all 0.5s ease 0s;
+}
+
+.body-text a:hover {
+  transition: all 0.5s ease 0s;
+  box-shadow: inset 0 -30px var(--clr-nav);
+  background-color: var(--clr-nav);
+}
+
+.testing {
+  background-color: aqua;
+}
+
+#contact .contact-content {
+  display: grid;
+  grid-column: auto;
+  height: 80%;
+  place-items: center;
+}
+
+.main-section::after {
+  content: " ";
+  float: none;
+  display: block;
+  width: 100%;
+  height: 0;
+  border-top: 0.5em solid var(--clr-nav);
+}
+
+footer {
+  width: auto;
+}
+
+.contact-social {
+  text-align: center;
+}
+
+.contact-social h3 {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.socialicons {
+  display: flex;
+  list-style: none;
+  width: 250px;
+  justify-content: space-between;
+}
+
+.socialicons a {
+  box-shadow: none;
+  color: var(--clr-nav);
+}
+
+.fab {
+  font-size: 30px;
+  transition: 600ms;
+}
+
+.socialicons a:hover {
+  color: rgb(64, 120, 143);
+}
+
+#pagefooter {
+  font-family: poppins, sans-serif;
+  font-weight: 300;
+  width: 100%;
+  padding: 20px;
+  margin-top: 1rem;
+  text-align: center;
+  background-color: var(--clr-nav);
+}
+
+@media (max-width: 800px) {
+  header {
+    height: 50px;
+  }
+
+  .nav-toggle {
+    opacity: 1;
+  }
+
+  #monogram {
+    font-size: 24px;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .nav {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+  }
+
+  .navlist {
+    display: flex;
+    height: 50%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .navlinker {
+    color: inherit;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .nav-toggle {
+    padding: 0.77em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    z-index: 1000;
+  }
+
+  .nav-open .nav {
+    transform: translateX(0%);
+  }
+
+  .nav-open .nav-toggle {
+    position: fixed;
+  }
+
+  .nav-open .hamburger {
+    transform: rotate(0.625turn);
+  }
+
+  .nav-open .hamburger::after {
+    opacity: 0;
+  }
+
+  .nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+  }
+
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    background: rgb(10, 10, 10);
+    width: 30px;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .hamburger::before {
+    top: 6px;
+  }
+  .hamburger::after {
+    bottom: 6px;
+  }
+
+  #landing {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  #landing h1 {
+    font-size: 4em;
+  }
+
+  #landing p {
+    font-size: 16px;
+  }
+
+  #learning-box h2,
+  #about-me h2,
+  #contact h2 {
+    font-size: 3rem;
+    padding-top: 20px;
+  }
+
+  #learning a {
+    padding-left: 0px;
+  }
+
+  #learning h3 {
+    font-size: 1.6em;
+  }
+
+  #learning {
+    grid-template-columns: 1fr;
+  }
+
+  a {
+    font-size: 18px;
+  }
+
+  #learning a {
+    font-size: 18px;
+  }
+
+  .body-text p {
+    font-size: 20px;
+  }
+
+  #learning-box h2,
+  #about-me h2,
+  #contact h2,
+  #learning-box p,
+  #about-me p,
+  #contact p {
+    padding-left: 10px;
+  }
+
+  #learning-box p,
+  #about-me p,
+  #contact p {
+    font-size: 18px;
+  }
+
+  #learning {
+    padding-left: 20px;
+  }
+  #pagefooter > p {
+    font-size: 16px;
+  }
+}
