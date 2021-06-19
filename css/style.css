@@ -192,7 +192,7 @@ strong {
 
 .about-box img {
   height: 50vh;
-  padding-left: 50px;
+  /* padding-left: 50px; */
 }
 
 .body-text a {
@@ -393,6 +393,7 @@ footer {
   #contact h2 {
     font-size: 3rem;
     padding-top: 20px;
+    margin-top: 40px;
   }
 
   #learning a {
