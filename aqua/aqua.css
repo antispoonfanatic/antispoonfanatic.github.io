@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+
+.heroimg img {
+    max-height: 500px;
+}
+
+.wishes {
+    line-height: 1;
+    text-align: center;
+}
+
+.wishes p:nth-child(1) {
+    font-size: 4em;
+}
+
+.wishes p:nth-child(2) {
+    animation: color-change 5s infinite alternate;
+    font-size: 6em;
+    font-weight: 700;
+}
+
+.wishes p:nth-child(3) {
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
+
+.credits {
+    font-size: 1.5em;
+    font-style: italic;
+    padding: 0 1em;
+    text-align: center;
+}
+
+
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: green; }
+  }
+
+@media only screen and (max-width: 600px) {
+    
+    .heroimg img {
+        max-height: 50vh;
+    }
+
+    body {
+        font-size: 10px;
+    }
