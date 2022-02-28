@@ -30,8 +30,7 @@ a {
     font-size: 4em;
 }
 
-.wishes a {
-    text-decoration: none;
+.wishes p:nth-child(2) {
     animation: color-change 5s infinite alternate;
     font-size: 6em;
     font-weight: 700;
@@ -64,7 +63,6 @@ a {
     }
 
     body {
-        height: 95vh;
         font-size: 10px;
     }
 }
