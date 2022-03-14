@@ -136,3 +136,32 @@ body {
     text-align: center;
     color: #3577a0; 
 }
+
+
+
+
+.wish:hover {
+    cursor: grab;
+}
+
+.for-wish {
+    display: none;
+    font-weight: 700;
+    background-image: url(/aqua/Asset1.svg);
+    background-size: contain;
+    background-repeat: no-repeat ;
+    padding: .5em 1.5em 3em 1.5em;
+    color:brown;
+    font-size: 2rem;
+    position: absolute;
+    width: min-content;
+    line-height: 1;
+    left: 20%;
+    top: 15%;
+    z-index: 999;
+}
+
+
+.wish:hover + .for-wish {
+    display: block;
+}
