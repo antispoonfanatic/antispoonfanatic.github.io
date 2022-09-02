@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-link {
+  list-style: none;
+  width: 6rem;
+  text-align: center;
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: #718dbd;
+
+  height: 100%;
+}
+
+.nav-link .active {
+  font-weight: 700;
+  color: #124191;
+  position: relative;
+}
+
+.nav-link .active::after {
+  content: ".";
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: -8px;
+  animation-name: dot-down;
+  animation-direction: forwards;
+  animation-duration: 500ms;
+}
+
+@keyframes dot-down {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -8px;
+  }
+}
+
+.works {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.work-box {
+  position: relative;
+  max-height: 400px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.work-desc {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  display: flex;
+  place-items: center;
+  padding: 1rem;
+  background-color: rgba(255, 245, 234, 0.7);
+  transform: translateY(100%);
+  transition: transform ease-in 300ms;
+}
+
+.work-img {
+  transform: scale(1);
+  transition: transform ease-in 400ms;
+}
+
+.work-box:hover .work-desc {
+  transform: translateX(0);
+}
+
+.work-box:hover .work-img {
+  transform: scale(1.25);
+}
+
+.about-me {
+  display: grid;
+  position: relative;
+  grid-template-columns: 2fr 3fr;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.about-me::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: -1rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #dcdedd;
+}
+
+.about-me h1 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #124191;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.about-me p {
+  margin-bottom: 0.75em;
+}
+
+.quote {
+  padding: 1rem;
+}
+
+.quote p {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.quote small {
+  display: block;
+  margin-left: 1em;
+}
+
+.about-me h2 {
+  position: relative;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #124191;
+  text-transform: uppercase;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.about-me h2::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: -1rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #dcdedd;
+}
+.expertise-tags {
+  max-width: 35rem;
+}
+
+.expertise-tags h4 {
+  font-weight: 400;
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.5em;
+  border: 1px solid #dcdedd;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #8d8d8d;
+}
+
+.footer-links a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #124191;
+  padding-left: 1rem;
+}
